@@ -1,0 +1,38 @@
+html.index {
+  background-image: url('animals.jpg');
+  background-repeat: no-repeat; 
+  background-position: center center;  
+  background-attachment: fixed;
+  background-size: 2000px 1000px;
+}
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; 
+}
+nav li {
+  margin-left: 20px;
+}
+nav a:link {
+  padding:15px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 0, 255) 
+}
+.sublist {
+  flex-direction: column; 
+  position: absolute;
+  margin-top: 15px;
+  display: none;
+}
+.itemWithDropdown:hover .sublist {
+  display: flex;
+}
+.sublist li {
+margin-left: 0px;
+margin-top: 15px;
+}
+.sublist a:link {
+background-color: rgb(209, 209, 209)
+}
